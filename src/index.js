@@ -7,6 +7,9 @@ import App from "./App";
 import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
 import { store } from "./store/store";
+import Amplify from "aws-amplify";
+import config from "./aws-exports";
+Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
